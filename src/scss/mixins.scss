@@ -3,16 +3,20 @@
     letter-spacing: 2px;
 }
 
-@mixin primary-button {
+@mixin button {
     cursor: pointer;
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $primary-btn-color;
     transition: all 0.6s;
-    color: white;
     text-transform: uppercase;
+}
+
+@mixin primary-button {
+    @include button;
+    background-color: $primary-btn-color;
+    color: white;
     font-size: 24px;
     letter-spacing: 0.75px;
     line-height: 1.5;

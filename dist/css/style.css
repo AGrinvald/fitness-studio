@@ -581,11 +581,58 @@ body {
     margin-top: auto;
     box-sizing: border-box; }
     .header__main-title {
-      padding: 0;
+      padding-right: 40px;
       margin: 0;
       color: white;
       font-family: "Plateia", Roboto, "Segoe UI";
-      font-size: 90px; }
+      font-size: 90px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      line-height: 1.2;
+      margin-bottom: 30px; }
+    .header__main-title-part {
+      display: block; }
+      .header__main-title-part--green {
+        text-align: right;
+        -webkit-text-fill-color: transparent;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #84c727; }
+    .header__main-subtitle {
+      display: block;
+      width: 100%;
+      text-align: right;
+      font-family: "Plateia", Roboto, "Segoe UI";
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px; }
+    .header__main-action {
+      position: relative;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 100px;
+      z-index: 2; }
+    .header__main-btn {
+      cursor: pointer;
+      border: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      transition: all 0.6s;
+      text-transform: uppercase;
+      background-color: #84c727;
+      width: 400px;
+      height: 80px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.25px;
+      justify-self: center; }
 
 .offer {
   position: relative;
@@ -1052,10 +1099,10 @@ body {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    background-color: #84c727;
     transition: all 0.6s;
-    color: white;
     text-transform: uppercase;
+    background-color: #84c727;
+    color: white;
     font-size: 24px;
     letter-spacing: 0.75px;
     line-height: 1.5;

@@ -159,11 +159,55 @@ body {
         box-sizing: border-box;
 
         &-title {
-            padding: 0;
+            padding-right: 40px;
             margin: 0;
             color: white;
             font-family: $font-family-title;
             font-size: 90px;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        &-title-part {
+            display: block;
+
+            &--green {
+                text-align: right;
+                -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: $primary;
+            }
+        }
+
+        &-subtitle {
+            display: block;
+            width: 100%;
+            text-align: right;
+            font-family: $font-family-title;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        &-action {
+            position: relative;
+            width: 100%;
+            display: flex;
+            margin-bottom: 100px;
+            z-index: 2;
+        }
+
+        &-btn {
+            @include button;
+            background-color: $primary;
+            width: 400px;
+            height: 80px;
+            font-size: 20px; 
+            font-weight: 600;
+            letter-spacing: -0.25px;
+            justify-self: center;
         }
     }
 }
