@@ -568,6 +568,7 @@ body {
     left: 0;
     background-image: url(../images/offer/transition.png);
     background-size: contain;
+    background-repeat: repeat-x;
     z-index: 2; }
   .header__container {
     width: 1400px;
@@ -674,7 +675,7 @@ body {
     background-image: url(../images/offer/background.png);
     background-size: 100%;
     background-position-x: center;
-    background-position-y: top;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 160px;
