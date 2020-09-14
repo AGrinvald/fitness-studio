@@ -106,11 +106,6 @@ body {
     font-size: 20px;
 }
 
-.app {
-    min-width: 2000px;
-    width: 100%;
-}
-
 .button {
     border: 0;
     padding: 30px 66px;
@@ -134,16 +129,18 @@ body {
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
+    width: 100%;
 
-    display: flex;
-    flex-direction: column;
+    &__container {
+        @include container;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 
     &__logo {
-        width: 100%;
         box-sizing: border-box;
         padding-top: 60px;
-        padding-left: 75px;
-        padding-right: 75px;
 
         &__logo-img {
             display: block;
@@ -153,10 +150,7 @@ body {
     }
 
     &__main {
-        width: 1400px;
-        margin: 0 auto;
         margin-top: auto;
-        box-sizing: border-box;
 
         &-title {
             padding-right: 40px;
@@ -204,7 +198,7 @@ body {
             background-color: $primary;
             width: 400px;
             height: 80px;
-            font-size: 20px; 
+            font-size: 20px;
             font-weight: 600;
             letter-spacing: -0.25px;
             justify-self: center;
@@ -252,6 +246,10 @@ body {
         z-index: 2;
     }
 
+    &__container {
+        @include container;
+    }
+
     &__main {
         box-sizing: border-box;
         height: 1041px;
@@ -264,8 +262,7 @@ body {
     }
 
     &__lists {
-        max-width: 1500px;
-        margin: 0 auto;
+        @include container;
         display: flex;
         justify-content: space-between;
         margin-bottom: 80px;
@@ -309,11 +306,8 @@ body {
     }
 
     &__footer {
+        @include container;
         color: white;
-        margin: 0 auto;
-        width: 1500px;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         align-items: center;
 
@@ -357,8 +351,7 @@ body {
     }
 
     &__title-wrap {
-        max-width: 1405px;
-        margin: 0 auto;
+        @include container;
         display: flex;
         justify-content: flex-end;
     }
@@ -376,9 +369,7 @@ body {
     }
 
     &__slider {
-        max-width: 1405px;
-        margin-left: auto;
-        margin-right: auto;
+        @include container;
         margin-top: 120px;
         margin-bottom: 100px;
 
@@ -475,6 +466,11 @@ body {
     background-image: url(../images/curriculum/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
+
+    &__container {
+        @include container;
+        height: 100%;
+    }
 
     &__title {
         color: white;
@@ -581,11 +577,12 @@ body {
     }
 
     &__container {
+        @include container;
+    }
+
+    &__blocks {
         position: relative;
-        max-width: 1460px;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
@@ -661,6 +658,10 @@ body {
 .supplement {
     margin-bottom: 210px;
 
+    &__container {
+        @include container;
+    }
+
     &__title {
         padding-bottom: 60px;
     }
@@ -681,10 +682,6 @@ body {
         cursor: pointer;
         box-sizing: border-box;
         height: 415px;
-        max-width: 1460px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
         background-color: $primary;
         padding: 90px;
         display: flex;
@@ -693,11 +690,19 @@ body {
         align-items: center;
         transition: box-shadow 0.4s;
 
+        &-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-title {
             font-family: $font-family-title;
-            font-size: 40px;
+            font-size: 30px;
             text-transform: uppercase;
             color: white;
+            text-align: center;
+            flex-grow: 1;
         }
 
         &-price {
@@ -728,24 +733,27 @@ body {
 }
 
 .main {
-    box-sizing: border-box;
     width: 100%;
     height: 1104px;
     background-image: url(../images/main/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 170px;
-    padding-top: 110px;
+
+    &__container {
+        @include container;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 170px;
+        padding-top: 110px;
+    }
 
     &__header {
-        max-width: 1040px;
+        width: 1040px;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
     }
 
     &__title {
@@ -763,10 +771,6 @@ body {
     }
 
     &__actions {
-        max-width: 1300px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         justify-content: space-between;
     }
@@ -780,11 +784,8 @@ body {
 }
 
 .footer {
+    @include container;
     box-sizing: border-box;
-    max-width: 1500px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
