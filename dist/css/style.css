@@ -557,7 +557,7 @@ body {
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
-  width: 100%; }
+  width: 100vw; }
   .header__container {
     width: 1400px;
     margin-left: auto;
@@ -633,7 +633,7 @@ body {
 
 .offer {
   position: relative;
-  width: 100%;
+  width: 100vw;
   margin-top: 105px; }
   .offer::before {
     content: "";
@@ -656,8 +656,6 @@ body {
   .offer__subtitle {
     font-size: 20px;
     letter-spacing: 2px;
-    max-width: 1500px;
-    width: 100%;
     font-weight: 100;
     line-height: 2;
     color: white;
@@ -678,6 +676,7 @@ body {
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
+    width: 100vw;
     padding-top: 160px; }
   .offer__lists {
     width: 1400px;
@@ -853,7 +852,8 @@ body {
   height: 1267px;
   background-image: url(../images/curriculum/background.png);
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  width: 100vw; }
   .curriculum__container {
     width: 1400px;
     margin-left: auto;
@@ -1077,7 +1077,7 @@ body {
       box-shadow: 0px 0px 28px #84c727; }
 
 .main {
-  width: 100%;
+  width: 100vw;
   height: 1104px;
   background-image: url(../images/main/background.png);
   background-repeat: no-repeat;

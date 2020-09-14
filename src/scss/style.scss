@@ -129,7 +129,7 @@ body {
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
 
     &__container {
         @include container;
@@ -208,7 +208,7 @@ body {
 
 .offer {
     position: relative;
-    width: 100%;
+    width: 100vw;
     margin-top: 105px;
 
     &::before {
@@ -235,8 +235,6 @@ body {
 
     &__subtitle {
         @include basic-text;
-        max-width: 1500px;
-        width: 100%;
         font-weight: 100;
         line-height: 2;
         color: white;
@@ -258,6 +256,7 @@ body {
         background-position-x: center;
         background-position-y: top;
         background-repeat: no-repeat;
+        width: 100vw;
         padding-top: 160px;
     }
 
@@ -466,6 +465,7 @@ body {
     background-image: url(../images/curriculum/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 100vw;
 
     &__container {
         @include container;
@@ -733,7 +733,7 @@ body {
 }
 
 .main {
-    width: 100%;
+    width: 100vw;
     height: 1104px;
     background-image: url(../images/main/background.png);
     background-repeat: no-repeat;
