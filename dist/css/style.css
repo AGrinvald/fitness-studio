@@ -616,14 +616,12 @@ body {
       font-family: "Plateia", Roboto, "Segoe UI";
       color: white;
       text-transform: uppercase;
-      font-size: 20px; }
+      font-size: 20px;
+      margin-bottom: 100px; }
     .header__main-action {
       position: relative;
-      width: 100%;
-      display: -ms-flexbox;
-      display: flex;
       margin-bottom: 100px;
-      z-index: 2; }
+      z-index: 3; }
     .header__main-btn {
       cursor: pointer;
       border: 0;
@@ -636,12 +634,33 @@ body {
       transition: all 0.6s;
       text-transform: uppercase;
       background-color: #84c727;
+      color: black;
+      font-size: 24px;
+      letter-spacing: 0.75px;
+      line-height: 1.5;
       width: 400px;
       height: 80px;
       font-size: 20px;
       font-weight: 600;
       letter-spacing: -0.25px;
-      justify-self: center; }
+      margin-left: auto;
+      margin-right: auto; }
+      .header__main-btn:hover {
+        background-color: black;
+        border: 1px solid #84c727;
+        color: #84c727; }
+    .header__main-text {
+      position: absolute;
+      top: 0;
+      right: 0;
+      box-sizing: border-box;
+      width: 444px;
+      border-left: 1px solid #84c727;
+      color: white;
+      font-size: 19px;
+      letter-spacing: 0.75px;
+      line-height: 1.5;
+      padding-left: 20px; }
 
 .offer {
   background-color: #202020;
@@ -751,7 +770,7 @@ body {
     top: 40px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    width: 1600px;
+    width: 1400px;
     height: 234px;
     background-image: url(../images/coaches/zitata.png);
     background-position: right;
@@ -1135,16 +1154,16 @@ body {
     transition: all 0.6s;
     text-transform: uppercase;
     background-color: #84c727;
-    color: white;
+    color: black;
     font-size: 24px;
     letter-spacing: 0.75px;
     line-height: 1.5;
     width: 555px;
-    height: 100px;
-    padding: 60px; }
+    height: 100px; }
     .main__btn:hover {
-      background-color: #68B400;
-      box-shadow: 0px 0px 16px #A6E22B; }
+      background-color: black;
+      border: 1px solid #84c727;
+      color: #84c727; }
 
 .footer {
   width: 1400px;
@@ -1167,13 +1186,15 @@ body {
     list-style: none; }
     .footer__list-item {
       font-size: 24px;
-      line-height: 1.75; }
+      line-height: 1.75;
+      text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4); }
     .footer__list-link {
       cursor: pointer;
       border: 0;
       background-color: transparent;
       font-weight: normal;
-      text-decoration: underline; }
+      text-decoration: underline;
+      text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4); }
   .footer__social-links {
     display: -ms-flexbox;
     display: flex;

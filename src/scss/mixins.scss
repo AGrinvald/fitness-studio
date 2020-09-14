@@ -16,16 +16,19 @@
 @mixin primary-button {
     @include button;
     background-color: $primary-btn-color;
-    color: white;
+    color:black;
     font-size: 24px;
     letter-spacing: 0.75px;
     line-height: 1.5;
 
     &:hover {
-        background-color: $primary-btn-hover-color;
-        box-shadow: 0px 0px 16px $main-btn-shadow-color;
+        background-color: black;
+        border: 1px solid $primary;
+        color: $primary;
     }
 }
+
+
 
 @mixin container {
     width: 1400px;

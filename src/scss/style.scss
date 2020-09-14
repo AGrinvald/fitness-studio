@@ -197,25 +197,38 @@ body {
             color: white;
             text-transform: uppercase;
             font-size: 20px;
+            margin-bottom: 100px;
         }
 
         &-action {
             position: relative;
-            width: 100%;
-            display: flex;
             margin-bottom: 100px;
-            z-index: 2;
+            z-index: 3;
         }
 
         &-btn {
-            @include button;
-            background-color: $primary;
+            @include primary-button;
             width: 400px;
             height: 80px;
             font-size: 20px;
             font-weight: 600;
             letter-spacing: -0.25px;
-            justify-self: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-text {
+            position: absolute;
+            top: 0;
+            right: 0;
+            box-sizing: border-box;
+            width: 444px;
+            border-left: 1px solid $primary;
+            color: white;
+            font-size: 19px;
+            letter-spacing: 0.75px;
+            line-height: 1.5;
+            padding-left: 20px;
         }
     }
 }
@@ -343,7 +356,7 @@ body {
         left: 50%;
         top: 40px;
         transform: translate(-50%, 0);
-        width: 1600px;
+        width: 1400px;
         height: 234px;
         background-image: url(../images/coaches/zitata.png);
         background-position: right;
@@ -787,8 +800,7 @@ body {
     &__btn {
         @include primary-button;
         width: 555px;
-        height: 100px;
-        padding: 60px;
+        height: 100px; 
     }
 }
 
@@ -812,6 +824,7 @@ body {
         &-item {
             font-size: 24px;
             line-height: 1.75;
+            text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
         }
 
         &-link {
@@ -820,6 +833,7 @@ body {
             background-color: transparent;
             font-weight: normal;
             text-decoration: underline;
+            text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
         }
     }
 
