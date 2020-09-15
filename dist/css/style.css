@@ -637,6 +637,8 @@ body {
           justify-content: center;
       transition: all 0.6s;
       text-transform: uppercase;
+      font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
+      font-weight: 600;
       background-color: #84c727;
       color: black;
       font-size: 24px;
@@ -1155,6 +1157,8 @@ body {
         justify-content: center;
     transition: all 0.6s;
     text-transform: uppercase;
+    font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
+    font-weight: 600;
     background-color: #84c727;
     color: black;
     font-size: 24px;
@@ -1194,9 +1198,11 @@ body {
       cursor: pointer;
       border: 0;
       background-color: transparent;
-      font-weight: normal;
+      font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
+      font-weight: 600;
       text-decoration: underline;
       text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
+      line-height: 1.75;
       outline: none; }
   .footer__social-links {
     display: -ms-flexbox;
