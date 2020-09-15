@@ -443,6 +443,9 @@ template {
     .collapsing {
       transition: none; } }
 
+* {
+  box-sizing: border-box; }
+
 html,
 body,
 div,
@@ -536,7 +539,8 @@ body {
   font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
   margin: 0;
   padding: 0;
-  font-size: 20px; }
+  font-size: 20px;
+  min-width: 1460px; }
 
 .button {
   border: 0;
@@ -692,7 +696,7 @@ body {
     box-sizing: border-box;
     height: 1041px;
     background-image: url(../images/offer/background.png);
-    background-size: 100%;
+    background-size: cover;
     background-position-x: center;
     background-position-y: bottom;
     background-repeat: no-repeat;
@@ -872,7 +876,7 @@ body {
 .curriculum {
   height: 1267px;
   background-image: url(../images/curriculum/background.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%; }
   .curriculum__container {
@@ -1108,7 +1112,7 @@ body {
   background-image: url(../images/main/background.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%; }
+  background-size: cover; }
   .main__container {
     width: 1400px;
     margin-left: auto;
@@ -1194,7 +1198,8 @@ body {
       background-color: transparent;
       font-weight: normal;
       text-decoration: underline;
-      text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4); }
+      text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
+      outline: none; }
   .footer__social-links {
     display: -ms-flexbox;
     display: flex;
@@ -1204,15 +1209,3 @@ body {
     display: block; }
     .footer__social-link:not(:last-child) {
       margin-right: 30px; }
-
-@media screen and (max-width: 1600px) {
-  .header {
-    width: 100vw; }
-    .header::before {
-      width: 100vw; }
-  .offer {
-    width: 100vw; }
-  .curriculum {
-    width: 100vw; }
-  .main {
-    width: 100vw; } }
