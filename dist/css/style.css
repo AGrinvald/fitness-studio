@@ -624,7 +624,7 @@ body {
       margin-bottom: 100px; }
     .header__main-action {
       position: relative;
-      margin-bottom: 100px;
+      margin-bottom: 140px;
       z-index: 3; }
     .header__main-btn {
       cursor: pointer;
@@ -806,12 +806,9 @@ body {
     margin-bottom: 100px; }
     .coaches__slider-controls {
       position: absolute;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0);
+      left: 0;
       bottom: 80px;
-      left: 50%;
-      width: 1500px; }
+      width: 1400px; }
     .coaches__slider-controls-wrap {
       width: 191px;
       position: relative;
@@ -819,7 +816,7 @@ body {
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      left: 630px; }
+      left: 613px; }
     .coaches__slider-control {
       cursor: pointer;
       display: block;

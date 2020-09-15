@@ -207,7 +207,7 @@ body {
 
         &-action {
             position: relative;
-            margin-bottom: 100px;
+            margin-bottom: 140px;
             z-index: 3;
         }
 
@@ -394,11 +394,9 @@ body {
 
         &-controls {
             position: absolute;
-            left: 50%;
-            transform: translate(-50%, 0);
+            left: 0;
             bottom: 80px;
-            left: 50%;
-            width: 1500px;
+            width: 1400px;
         }
 
         &-controls-wrap {
@@ -406,7 +404,7 @@ body {
             position: relative;
             display: flex;
             justify-content: space-between;
-            left: 630px;
+            left: 613px;
         }
 
         &-control {
