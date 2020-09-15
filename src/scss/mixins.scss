@@ -30,11 +30,21 @@
     }
 }
 
-
-
 @mixin container {
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+}
+
+@mixin section-connector {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 200px;
+    background-color: #84C727;
+    z-index: 10;
+    bottom: -100px;
 }

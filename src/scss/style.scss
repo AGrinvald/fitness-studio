@@ -108,7 +108,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    min-width: 1460px
+    min-width: 1460px;
 }
 
 .button {
@@ -136,6 +136,10 @@ body {
     background-position-y: top;
     background-repeat: no-repeat;
     width: 100%;
+
+    &::after {
+        @include section-connector;
+    }
 
     &::before {
         content: "";
@@ -188,7 +192,7 @@ body {
 
             &--green {
                 text-align: right;
-                -webkit-text-fill-color: rgba(0,0,0,0.3); /* Will override color (regardless of order) */
+                -webkit-text-fill-color: rgba(0, 0, 0, 0.3); /* Will override color (regardless of order) */
                 -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: $primary;
             }
@@ -243,6 +247,10 @@ body {
     position: relative;
     width: 100%;
     padding-top: 105px;
+
+    &::after {
+        @include section-connector;
+    }
 
     &__title {
         text-align: center;
@@ -354,6 +362,10 @@ body {
     padding-top: 130px;
     position: relative;
 
+    &::after {
+        @include section-connector;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -388,14 +400,14 @@ body {
 
     &__slider {
         @include container;
-        margin-top: 120px;
-        margin-bottom: 100px;
+        padding-top: 120px;
+        padding-bottom: 100px;
 
         &-controls {
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0);
-            bottom: 80px;
+            bottom: 180px;
             width: 1400px;
         }
 
@@ -479,11 +491,16 @@ body {
 }
 
 .curriculum {
+    position: relative;
     height: 1267px;
     background-image: url(../images/curriculum/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+
+    &::after {
+        @include section-connector;
+    }
 
     &__container {
         @include container;
@@ -537,9 +554,21 @@ body {
     }
 
     &__card-body {
+        position: relative;
         height: 250px;
         background-color: white;
         padding: 10px 30px 35px 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 925px;
+            height: 20px;
+            left: 30px;
+            bottom: 35px;
+            background-color: white;
+            filter: blur(13px);
+        }
     }
 
     &__card-inner {
@@ -628,6 +657,19 @@ body {
         align-items: center;
         margin-bottom: 130px;
 
+        &--right-arrow {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 102px;
+                right: -102px;
+                top: 50%;
+                height: 1px;
+                background-color: $steps-block-arrow-color;
+                z-index: -1;
+            }
+        }
+
         &:hover {
             box-shadow: 0px 0px 20px $steps-block-border-shadow;
 
@@ -681,7 +723,12 @@ body {
 }
 
 .supplement {
-    margin-bottom: 210px;
+    position: relative;
+    padding-bottom: 210px;
+
+    &::after {
+        @include section-connector;
+    }
 
     &__container {
         @include container;
@@ -835,7 +882,6 @@ body {
             border: 0;
             background-color: transparent;
             font-family: $font-family-base;
-            font-weight: 600;
             text-decoration: underline;
             text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
             line-height: 1.75;

@@ -563,6 +563,17 @@ body {
   background-position-y: top;
   background-repeat: no-repeat;
   width: 100%; }
+  .header::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 2px;
+    height: 200px;
+    background-color: #84C727;
+    z-index: 10;
+    bottom: -100px; }
   .header::before {
     content: "";
     position: absolute;
@@ -673,6 +684,17 @@ body {
   position: relative;
   width: 100%;
   padding-top: 105px; }
+  .offer::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 2px;
+    height: 200px;
+    background-color: #84C727;
+    z-index: 10;
+    bottom: -100px; }
   .offer__title {
     text-align: center;
     margin: 0;
@@ -768,6 +790,17 @@ body {
 .coaches {
   padding-top: 130px;
   position: relative; }
+  .coaches::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 2px;
+    height: 200px;
+    background-color: #84C727;
+    z-index: 10;
+    bottom: -100px; }
   .coaches::before {
     content: "";
     position: absolute;
@@ -803,14 +836,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    margin-top: 120px;
-    margin-bottom: 100px; }
+    padding-top: 120px;
+    padding-bottom: 100px; }
     .coaches__slider-controls {
       position: absolute;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
-      bottom: 80px;
+      bottom: 180px;
       width: 1400px; }
     .coaches__slider-controls-wrap {
       width: 191px;
@@ -874,11 +907,23 @@ body {
       margin-bottom: 20px; }
 
 .curriculum {
+  position: relative;
   height: 1267px;
   background-image: url(../images/curriculum/background.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%; }
+  .curriculum::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 2px;
+    height: 200px;
+    background-color: #84C727;
+    z-index: 10;
+    bottom: -100px; }
   .curriculum__container {
     width: 1400px;
     margin-left: auto;
@@ -923,9 +968,20 @@ body {
       .curriculum__card-btn.collapsed:hover {
         box-shadow: 0px 0px 18px #a6e22b; }
   .curriculum__card-body {
+    position: relative;
     height: 250px;
     background-color: white;
     padding: 10px 30px 35px 30px; }
+    .curriculum__card-body::before {
+      content: "";
+      position: absolute;
+      width: 925px;
+      height: 20px;
+      left: 30px;
+      bottom: 35px;
+      background-color: white;
+      -webkit-filter: blur(13px);
+              filter: blur(13px); }
   .curriculum__card-inner {
     width: 100%;
     height: 100%;
@@ -994,6 +1050,15 @@ body {
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 130px; }
+  .steps__block--right-arrow::after {
+    content: "";
+    position: absolute;
+    width: 102px;
+    right: -102px;
+    top: 50%;
+    height: 1px;
+    background-color: #96CB60;
+    z-index: -1; }
   .steps__block:hover {
     box-shadow: 0px 0px 20px #84c727; }
     .steps__block:hover.steps__block::before {
@@ -1043,7 +1108,19 @@ body {
   line-height: 1.4; }
 
 .supplement {
-  margin-bottom: 210px; }
+  position: relative;
+  padding-bottom: 210px; }
+  .supplement::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 2px;
+    height: 200px;
+    background-color: #84C727;
+    z-index: 10;
+    bottom: -100px; }
   .supplement__container {
     width: 1400px;
     margin-left: auto;
@@ -1199,7 +1276,6 @@ body {
       border: 0;
       background-color: transparent;
       font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
-      font-weight: 600;
       text-decoration: underline;
       text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4);
       line-height: 1.75;
