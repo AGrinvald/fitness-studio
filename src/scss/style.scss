@@ -145,7 +145,7 @@ body {
         bottom: -615px;
         left: 0;
         background-image: url(../images/offer/transition.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: repeat-x;
         z-index: 2;
     }
@@ -188,7 +188,7 @@ body {
 
             &--green {
                 text-align: right;
-                -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+                -webkit-text-fill-color: rgba(0,0,0,0.3); /* Will override color (regardless of order) */
                 -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: $primary;
             }
@@ -336,7 +336,6 @@ body {
             }
             margin-left: 25px;
             line-height: 2;
-            letter-spacing: 2px;
         }
 
         &-icon-wrap {
@@ -394,7 +393,8 @@ body {
 
         &-controls {
             position: absolute;
-            left: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
             bottom: 80px;
             width: 1400px;
         }
@@ -404,7 +404,7 @@ body {
             position: relative;
             display: flex;
             justify-content: space-between;
-            left: 613px;
+            left: 584px;
         }
 
         &-control {

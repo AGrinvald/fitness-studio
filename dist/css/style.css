@@ -571,7 +571,7 @@ body {
     bottom: -615px;
     left: 0;
     background-image: url(../images/offer/transition.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: repeat-x;
     z-index: 2; }
   .header__container {
@@ -609,7 +609,7 @@ body {
       display: block; }
       .header__main-title-part--green {
         text-align: right;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0.3);
         /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #84c727; }
@@ -753,8 +753,7 @@ body {
         align-items: center; }
     .offer__footer-text {
       margin-left: 25px;
-      line-height: 2;
-      letter-spacing: 2px; }
+      line-height: 2; }
       .offer__footer-text--primary {
         color: #84c727; }
     .offer__footer-icon-wrap {
@@ -806,7 +805,9 @@ body {
     margin-bottom: 100px; }
     .coaches__slider-controls {
       position: absolute;
-      left: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
       bottom: 80px;
       width: 1400px; }
     .coaches__slider-controls-wrap {
@@ -816,7 +817,7 @@ body {
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      left: 613px; }
+      left: 584px; }
     .coaches__slider-control {
       cursor: pointer;
       display: block;
