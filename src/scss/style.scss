@@ -280,7 +280,6 @@ body {
     }
 
     &__main {
-        position: relative;
         box-sizing: border-box;
         height: 1041px;
         background-image: url(../images/offer/background.png);
@@ -299,7 +298,7 @@ body {
         justify-content: space-between;
         margin-bottom: 80px;
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
     &__list-container {
