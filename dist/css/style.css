@@ -1061,22 +1061,26 @@ body {
     z-index: -1; }
   .steps__block:hover {
     box-shadow: 0px 0px 20px #84c727; }
-    .steps__block:hover.steps__block::before {
+    .steps__block:hover .steps__block-index {
       color: #78ab0a; }
-  .steps__block::before {
-    transition: color 0.4s;
-    position: absolute;
-    font-size: 90px;
-    font-family: "Plateia", Roboto, "Segoe UI";
-    color: #dcdcdc;
-    top: -60px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    line-height: 1;
-    background-color: white;
-    content: "0" counter(steps-counter);
-    counter-increment: steps-counter; }
+
+.steps__block-index {
+  transition: color 0.4s;
+  position: absolute;
+  font-size: 40px;
+  font-family: "Plateia", Roboto, "Segoe UI";
+  color: #dcdcdc;
+  top: -45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  line-height: 1;
+  background-color: white;
+  counter-increment: steps-counter;
+  z-index: 1; }
+
+.steps__block-number {
+  font-size: 55px; }
 
 .steps__block-header {
   height: 50%;
