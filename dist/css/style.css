@@ -710,6 +710,9 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
+html, body {
+  width: 100%; }
+
 body {
   background-color: white;
   font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
