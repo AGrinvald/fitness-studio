@@ -1,6 +1,6 @@
 @mixin basic-text {
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 18px;
+    letter-spacing: 0.75px;
 }
 
 @mixin button {
@@ -18,8 +18,8 @@
 @mixin primary-button {
     @include button;
     background-color: $primary-btn-color;
-    color:black;
-    font-size: 24px;
+    color: black;
+    font-size: 20px;
     letter-spacing: 0.75px;
     line-height: 1.5;
 
@@ -30,8 +30,28 @@
     }
 }
 
+@mixin scroll-bar {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $curriculum-card-list-scroll-track-bg;
+        border-radius: $curriculum-card-list-scroll-border-radius;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $curriculum-card-list-scroll-thumb-bg;
+        border-radius: $curriculum-card-list-scroll-border-radius;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
 @mixin container {
-    width: 1400px;
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -44,7 +64,7 @@
     transform: translateX(-50%);
     width: 2px;
     height: 200px;
-    background-color: #84C727;
+    background-color: #84c727;
     z-index: 10;
     bottom: -100px;
 }

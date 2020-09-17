@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=1460">
+  <meta name="viewport" content="width=1200">
   <link rel="icon" href="/favicon.ico">
   <title>Fitness studio</title>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
@@ -31,7 +31,7 @@
         <div class="header__main-action">
           <button class="header__main-btn">Получить консультацию</button>
           <div class="header__main-text">
-            Запишись на бесплатную консультациюи получи финансовый расчёт фитнес-студии и калькулятор карьерного роста
+            Запишись на бесплатную консультацию и получи финансовый расчёт фитнес-студии и калькулятор карьерного роста
             в
             фитнесе
           </div>
@@ -197,12 +197,12 @@
     <div class="coaches__slider-controls">
       <div class="coaches__slider-controls-wrap">
         <button id="nextCoach" class="coaches__slider-control">
-          <svg width="20" height="37">
+          <svg width="16" height="30">
             <use xlink:href="images/sprite.svg#prev" />
           </svg>
         </button>
         <button id="prevCoach" class="coaches__slider-control">
-          <svg width="20" height="37">
+          <svg width="16" height="30">
             <use xlink:href="images/sprite.svg#next" />
           </svg>
         </button>
@@ -341,7 +341,7 @@
       <div class="steps__blocks">
         <div class="steps__block steps__block--right-arrow">
           <div class="steps__block-index">
-            шаг
+            <span class="steps_block-index-text">шаг</span>
             <span class="steps__block-number">1</span>
           </div>
           <div class="steps__block-header">
@@ -357,7 +357,7 @@
         </div>
         <div class="steps__block steps__block--right-arrow">
           <div class=" steps__block-index">
-            шаг
+            <span class="steps_block-index-text">шаг</span>
             <span class="steps__block-number">2</span>
           </div>
           <div class=" steps__block-header">
@@ -373,7 +373,7 @@
         </div>
         <div class="steps__block">
           <div class=" steps__block-index">
-            шаг
+            <span class="steps_block-index-text">шаг</span>
             <span class="steps__block-number">3</span>
           </div>
           <div class="steps__block-header">
@@ -389,7 +389,7 @@
         </div>
         <div class="steps__block steps__block--right-arrow">
           <div class=" steps__block-index">
-            шаг
+            <span class="steps_block-index-text">шаг</span>
             <span class="steps__block-number">4</span>
           </div>
           <div class=" steps__block-header">
@@ -405,7 +405,7 @@
         </div>
         <div class="steps__block steps__block--right-arrow">
           <div class=" steps__block-index">
-            шаг
+            <span class="steps_block-index-text">шаг</span>
             <span class="steps__block-number">5</span>
           </div>
           <div class=" steps__block-header">
@@ -422,7 +422,7 @@
         </div>
         <div class="steps__block">
           <div class=" steps__block-index">
-            шаг
+            <span class="steps_block-index-text">шаг</span>
             <span class="steps__block-number">6</span>
           </div>
           <div class="steps__block-header">
@@ -450,13 +450,13 @@
       <div class="supplement__block">
         <div class="supplement__block-header">
           <h4 class="supplement__block-title">
-            Первые 25 шагов <br /> за <span class="supplement__block-price">265 р.</span>
+            5 модулей <br /> (102 шага PDF) <br /> за <span class="supplement__block-price">1799 р.</span>
           </h4>
           <h4 class="supplement__block-title">
-            Все 102 шага <br /> за <span class="supplement__block-price">265 р.</span>
+            1 модуль <br /> (28 шагов PDF) <br /> за <span class="supplement__block-price">269 р.</span>
           </h4>
         </div>
-        <a href="#" class="supplement__block-link">Скачать</a>
+        <a href="#" class="supplement__block-link" data-toggle="modal" data-target="#bookModal">Скачать</a>
       </div>
     </div>
   </section>
@@ -469,7 +469,8 @@
       </div>
       <div class="main__actions">
         <button class="main__btn" type="button">ЗАБРОНИРОВАТЬ КУРС</button>
-        <button class="main__btn" type="button">ЗАПИСАТЬСЯ <br /> НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
+        <button class="main__btn" type="button" data-toggle="modal" data-target="#signModal">ЗАПИСАТЬСЯ <br /> НА
+          БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</button>
       </div>
     </div>
   </main>
@@ -486,7 +487,7 @@
       <li class="footer__list-item">График работы ПН - ПТ 10:00 - 18:00</li>
       <li class="footer__list-item">+7 (911) 269 -11-11</li>
       <li class="footer__list-item">
-        <button type="button" class="footer__list-link">
+        <button type="button" class="footer__list-link" data-toggle="modal" data-target="#privateModal">
           Политика конфиденциальности
         </button>
       </li>
@@ -504,6 +505,152 @@
       </a>
     </div>
   </footer>
+  <div class="modal fade" id="privateModal" tabindex="-1" aria-labelledby="privateModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="privateModalLabel">Политика конфиденциальности</h5>
+          <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <svg width="30" height="30">
+              <use xlink:href="images/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="private">
+            <div class="private__text">
+              <p>
+                Политика в отношении обработки персональных данных
+              </p>
+              <p>
+                1. Общие положения:
+              </p>
+              <p>
+                1.1. Настоящая политика обработки
+                персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ
+                «О
+                персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению
+                безопасности
+                персональных данных, предпринимаемые ИП Покопцевым Юрием Денисовичем (далее – Оператор);
+              </p>
+              <p>
+                1.2. Оператор ставит
+                своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и
+                гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной
+                жизни,
+                личную и семейную тайну;
+              </p>
+              <p>
+                1.3. Настоящая политика Оператора в отношении обработки персональных данных (далее –
+                Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта
+                НАЗВАНИЕ
+                САЙТА;
+              </p>
+              <p>
+                2. Основные понятия, используемые в Политике:
+              </p>
+              <p>
+                2.1. Автоматизированная обработка персональных данных –
+                обработка персональных данных с помощью средств вычислительной техники;
+              </p>
+              <p>
+                2.2. Блокирование персональных данных
+                – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима
+                для
+                уточнения персональных данных);
+              </p>
+              <p>
+                2.3. Веб-сайт – совокупность графических и информационных материалов, а также
+                программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу НАЗВАНИЕ
+                САЙТА;
+              </p>
+              <p>
+                2.3. Веб-сайт – совокупность графических и информационных материалов, а также
+                программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу НАЗВАНИЕ
+                САЙТА;
+              </p>
+              <p>
+                2.3. Веб-сайт – совокупность графических и информационных материалов, а также
+                программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу НАЗВАНИЕ
+                САЙТА;
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-white fade" id="signModal" tabindex="-1" aria-labelledby="signModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-content--transparent">
+        <div class="modal-header modal-header--white">
+          <h5 class="modal-title" id="signModalLabel">Запишись <br /> на бесплатную консультацию</h5>
+          <p class="modal-subtitle">Мы свяжемся с тобой и согласуем удобное время для встречи</p>
+          <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <svg width="30" height="30">
+              <use xlink:href="images/sprite.svg#white-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="signForm">
+            <div class="signForm__body">
+              <input class="signForm__input" type="text" name="name" required placeholder="Твое имя">
+              <input class="signForm__input" type="email" name="email" required placeholder="Электронная почта">
+              <input class="signForm__input" id="signFormPhone" type="tel" name="phone" required placeholder="Телефон">
+              <button class="signForm__btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+            </div>
+            <div class="signForm__footer">
+              <input class="signForm__checkbox" type="checkbox" id="confirm" name="confirm" required>
+              <label class="signForm__checkbox-label" for="confirm">Согласен с Политикой конфиденциальности</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-white fade" id="bookModal" tabindex="-1" aria-labelledby="bookModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal-content--transparent">
+        <div class="modal-header modal-header--white">
+          <h5 class="modal-title" id="bookModalLabel">Выбери нужный модуль</h5>
+          <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <svg width="30" height="30">
+              <use xlink:href="images/sprite.svg#white-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="book">
+            <div class="book__block">
+              <h3 class="book__block-title">
+                1-й модуль (28 шагов PDF) за 169 р.
+              </h3>
+              <p class="book__block-body">
+                Пошаговая стратегия разработки бизнес-процессов твоей студии от этапа создания идеи, брендирования,
+                расчёта UNIT-экономики, до анализа рынкаконкурентов.
+              </p>
+              <button type="button" class="book__block-btn">
+                Купить
+              </button>
+            </div>
+            <div class="book__block">
+              <h3 class="book__block-title">
+                5 модулей (102 шага PDF) за 1 799 р.
+              </h3>
+              <p class="book__block-body">
+                Подготовленная кампания по созданию фитнес-студии. Все необходимые инструменты по разработке твоей идеи
+                до момента получения первых клиентов.
+              </p>
+              <button type="button" class="book__block-btn">
+                Купить
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
