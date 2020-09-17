@@ -903,6 +903,9 @@ body {
 }
 
 .modal {
+    width: 100vw;
+    height: 100vh;
+
     &-header {
         position: relative;
         border: 0;
@@ -941,7 +944,7 @@ body {
 
     &-white {
         background-image: url(../images/modal/background.png);
-        background-size: 100%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
