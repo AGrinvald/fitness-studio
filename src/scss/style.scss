@@ -112,6 +112,10 @@ body {
     min-width: 1400px;
 }
 
+strong {
+    font-weight: 900;
+}
+
 .button {
     border: 0;
     padding: 30px 66px;
@@ -164,18 +168,22 @@ body {
     }
 
     &__logo {
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
         box-sizing: border-box;
         padding-top: 60px;
 
         &__logo-img {
             display: block;
-            width: 156px;
-            height: 112px;
+            width: 189px;
+            height: 91px;
         }
     }
 
     &__main {
         margin-top: auto;
+        margin-bottom: 150px;
 
         &-title {
             margin: 0;
@@ -365,6 +373,7 @@ body {
 
 .coaches {
     padding-top: 110px;
+    padding-bottom: 100px;
     position: relative;
 
     &::after {
@@ -397,7 +406,8 @@ body {
         width: 540px;
         font-size: 46px;
         line-height: 1.4;
-
+        margin-bottom: 70px;
+        
         &--upper {
             text-transform: uppercase;
         }
@@ -406,14 +416,13 @@ body {
     &__slider {
         @include container;
         box-sizing: border-box;
-        padding-top: 70px;
-        padding-bottom: 200px;
-
+        height: 835px;
+        
         &-controls {
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0);
-            bottom: 230px;
+            bottom: 305px;
             width: 1170px;
         }
 
@@ -641,7 +650,7 @@ body {
         box-sizing: border-box;
         position: relative;
         width: 360px;
-        height: 450px;
+        height: 400px;
         background: white;
         border: 2px solid $steps-block-border-color;
         display: flex;
@@ -699,14 +708,14 @@ body {
     }
 
     &__block-header {
-        height: 55%;
+        height: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     &__block-main {
-        height: 45%;
+        height: 50%;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
@@ -964,10 +973,12 @@ body {
 }
 
 .private {
+    position: relative;
     padding-right: 25px;
     margin-bottom: 50px;
     height: 595px;
     overflow-y: auto;
+    overflow-x: hidden;
     @include scroll-bar;
 
     &__text {

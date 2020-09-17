@@ -718,6 +718,9 @@ body {
   font-size: 18px;
   min-width: 1400px; }
 
+strong {
+  font-weight: 900; }
+
 .button {
   border: 0;
   padding: 30px 66px; }
@@ -773,14 +776,18 @@ body {
     -ms-flex-direction: column;
         flex-direction: column; }
   .header__logo {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
     padding-top: 60px; }
     .header__logo__logo-img {
       display: block;
-      width: 156px;
-      height: 112px; }
+      width: 189px;
+      height: 91px; }
   .header__main {
-    margin-top: auto; }
+    margin-top: auto;
+    margin-bottom: 150px; }
     .header__main-title {
       margin: 0;
       color: white;
@@ -967,6 +974,7 @@ body {
 
 .coaches {
   padding-top: 110px;
+  padding-bottom: 100px;
   position: relative; }
   .coaches::after {
     content: "";
@@ -1006,7 +1014,8 @@ body {
     font-family: "Plateia", Roboto, "Segoe UI";
     width: 540px;
     font-size: 46px;
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin-bottom: 70px; }
     .coaches__title--upper {
       text-transform: uppercase; }
   .coaches__slider {
@@ -1015,14 +1024,13 @@ body {
     margin-right: auto;
     box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 70px;
-    padding-bottom: 200px; }
+    height: 835px; }
     .coaches__slider-controls {
       position: absolute;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
-      bottom: 230px;
+      bottom: 305px;
       width: 1170px; }
     .coaches__slider-controls-wrap {
       width: 151px;
@@ -1221,7 +1229,7 @@ body {
   box-sizing: border-box;
   position: relative;
   width: 360px;
-  height: 450px;
+  height: 400px;
   background: white;
   border: 2px solid #57ad00;
   display: -ms-flexbox;
@@ -1274,7 +1282,7 @@ body {
   display: block; }
 
 .steps__block-header {
-  height: 55%;
+  height: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -1283,7 +1291,7 @@ body {
       justify-content: center; }
 
 .steps__block-main {
-  height: 45%;
+  height: 50%;
   -ms-flex-positive: 1;
       flex-grow: 1;
   display: -ms-flexbox;
@@ -1530,10 +1538,12 @@ body {
     margin-top: 25px; }
 
 .private {
+  position: relative;
   padding-right: 25px;
   margin-bottom: 50px;
   height: 595px;
-  overflow-y: auto; }
+  overflow-y: auto;
+  overflow-x: hidden; }
   .private::-webkit-scrollbar {
     width: 10px; }
   .private::-webkit-scrollbar-track {
