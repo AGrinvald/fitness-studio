@@ -6,6 +6,7 @@ function insertViewport() {
         || document.body.clientWidth;
 
     if (w < 1400) {
+        console.log(w);
         document.getElementsByTagName('meta')['viewport'].content = 'width=1400';
     }
 

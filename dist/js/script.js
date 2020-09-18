@@ -14742,6 +14742,7 @@ function insertViewport() {
   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
   if (w < 1400) {
+    console.log(w);
     document.getElementsByTagName('meta')['viewport'].content = 'width=1400';
   }
 }
