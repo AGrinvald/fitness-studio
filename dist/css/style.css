@@ -1491,6 +1491,19 @@ strong {
 .modal {
   width: 100vw;
   height: 100vh; }
+  .modal-content--shadow {
+    position: relative; }
+    .modal-content--shadow::before {
+      content: "";
+      position: absolute;
+      bottom: 35px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: white;
+      -webkit-filter: blur(10px);
+              filter: blur(10px);
+      z-index: 1000; }
   .modal-header {
     position: relative;
     border: 0;
