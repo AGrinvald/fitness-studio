@@ -1,4 +1,16 @@
 
+function insertViewport() {
+
+    var w = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    if (w < 1400) {
+        document.getElementsByTagName('meta')['viewport'].content = 'width=1400';
+    }
+
+};
+
 $(document).ready(function () {
 
     $("#signFormPhone").mask("+7(999) 999-99-99");
@@ -10,6 +22,9 @@ $(document).ready(function () {
     });
 
     $('#curriculumAccordion').collapse();
+
+    insertViewport();
+
 });
 
 (function (factory) {

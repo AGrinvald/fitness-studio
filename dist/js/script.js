@@ -14738,6 +14738,15 @@ __webpack_require__.r(__webpack_exports__);
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function insertViewport() {
+  var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (w < 1400) {
+    document.getElementsByTagName('meta')['viewport'].content = 'width=1400';
+  }
+}
+
+;
 $(document).ready(function () {
   $("#signFormPhone").mask("+7(999) 999-99-99");
   $('.coaches__slider').slick({
@@ -14746,6 +14755,7 @@ $(document).ready(function () {
     prevArrow: $('#prevCoach')
   });
   $('#curriculumAccordion').collapse();
+  insertViewport();
 });
 
 (function (factory) {
