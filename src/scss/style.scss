@@ -416,6 +416,7 @@ strong {
 
     &__slider {
         @include container;
+        width: 1200px;
         box-sizing: border-box;
         height: 835px;
         
@@ -424,7 +425,7 @@ strong {
             left: 50%;
             transform: translate(-50%, 0);
             bottom: 305px;
-            width: 1170px;
+            width: 1200px;
         }
 
         &-controls-wrap {
@@ -482,13 +483,13 @@ strong {
     }
 
     &__coach {
-        width: 540px;
+        width: 590px;
 
         &-name {
             text-transform: uppercase;
             color: $primary;
             font-weight: bold;
-            font-size: 38px;
+            font-size: 40px;
             line-height: 1;
             letter-spacing: 9px;
             margin-bottom: 35px;
@@ -709,7 +710,8 @@ strong {
     }
 
     &__block-header {
-        height: 50%;
+        margin-top: 50px;
+        height: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
