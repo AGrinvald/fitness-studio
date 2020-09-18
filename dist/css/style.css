@@ -718,7 +718,8 @@ body {
   font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
   margin: 0;
   padding: 0;
-  font-size: 18px; }
+  font-size: 18px;
+  min-width: 1920px; }
 
 strong {
   font-weight: 900; }
