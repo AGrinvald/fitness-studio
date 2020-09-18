@@ -1702,3 +1702,7 @@ strong {
         background-color: black;
         border: 1px solid #84c727;
         color: #84c727; }
+
+@media (max-width: 1400px) {
+  body {
+    width: 1400px; } }
