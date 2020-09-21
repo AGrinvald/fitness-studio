@@ -1,8 +1,6 @@
 
 function insertViewport() {
 
-    var viewport_meta = document.getElementById('viewport-meta');
-
     var w = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;

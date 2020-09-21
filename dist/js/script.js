@@ -14739,7 +14739,6 @@ __webpack_require__.r(__webpack_exports__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function insertViewport() {
-  var viewport_meta = document.getElementById('viewport-meta');
   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
   if (w <= 1024) {
