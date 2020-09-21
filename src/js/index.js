@@ -5,10 +5,12 @@ function insertViewport() {
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-    if (w <= 1024) {
+
+    console.log(w);
+    if (w > 1300 && w <= 1920) {
+        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1920');
+    } else if (w <= 1300) {
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1400');
-    } else if (w <= 1920) {
-        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=0.67 width=1920');
     } else {
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=device-width');
     }

@@ -14740,11 +14740,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 function insertViewport() {
   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  console.log(w);
 
-  if (w <= 1024) {
+  if (w > 1300 && w <= 1920) {
+    return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1920');
+  } else if (w <= 1300) {
     return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1400');
-  } else if (w <= 1920) {
-    return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=0.67 width=1920');
   } else {
     return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=device-width');
   }
