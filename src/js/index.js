@@ -7,8 +7,8 @@ function insertViewport() {
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-    if (w <= 1024) {
-        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1400');
+    if (w > 1024) {
+        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
     }
 
 };
