@@ -8,10 +8,13 @@ function insertViewport() {
         || document.body.clientWidth;
 
     console.log(w);
-    if (w > 1024) {
+    if (w < 1024) {
+        return $('meta[name=viewport]').attr('content', 'width=1400');
+    } else if(w < 1400) {
+        return $('meta[name=viewport]').attr('content', 'width=1920');
+    } else {
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
     }
-
 };
 
 $(function () {
