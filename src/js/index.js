@@ -2,11 +2,12 @@
 insertViewport();
 
 function insertViewport() {
-
+    console.log("insert viewport");
     var w = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
+    console.log(w);
     if (w > 1024) {
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
     }
