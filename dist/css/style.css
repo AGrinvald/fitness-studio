@@ -720,14 +720,6 @@ body {
 strong {
   font-weight: 900; }
 
-#app {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  margin-left: -480px;
-  width: 1920px;
-  padding: 0; }
-
 .button {
   border: 0;
   padding: 30px 66px; }
@@ -1733,3 +1725,7 @@ strong {
   text-align: center;
   letter-spacing: 0.75px;
   padding-top: 200px; }
+
+@media (max-width: 1400px) {
+  body {
+    width: 1400px; } }
