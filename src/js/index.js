@@ -1,21 +1,14 @@
 
+insertViewport();
+
 function insertViewport() {
 
     var w = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-        
-
-    console.log(w);
     if (w <= 1024) {
-        console.log("w <= 1400");
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1400');
-    } else if (w > 1024 && w <= 1920) {
-        console.log("w > 1024 && w <= 1920");
-        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=1920');
-    } else {
-        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, width=device-width');
     }
 
 };
@@ -51,8 +44,6 @@ $(function () {
         $("#signFormPhone").mask("+7(999) 999-99-99");
 
     });
-
-    insertViewport();
 
 });
 
