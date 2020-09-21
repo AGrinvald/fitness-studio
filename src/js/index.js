@@ -1,33 +1,13 @@
 
 insertViewport();
 
-function detectMob() {
-    const toMatch = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /Windows Phone/i
-    ];
-
-    return toMatch.some((toMatchItem) => {
-        return navigator.userAgent.match(toMatchItem);
-    });
-}
-
 function insertViewport() {
 
     var w = window.innerWidth
         || document.documentElement.clientWidth
         || document.body.clientWidth;
 
-    var isMobileDevice = detectMob();
-
-    if (w <= 1400 && isMobileDevice) {
-        return $('meta[name=viewport]').attr('content', 'width=1400');
-    } else if (w > 1400) {
+    if (w > 1400) {
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
     }
 };
