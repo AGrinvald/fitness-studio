@@ -980,6 +980,7 @@ strong {
         background: none;
         background-color: transparent;
         border: 2px solid white;
+        height: 700px;
     }
 
     &-subtitle {
@@ -1011,6 +1012,7 @@ strong {
 
 .signForm {
     padding: 0 100px;
+    padding-top: 50px;
 
     &__body {
         display: flex;
@@ -1115,6 +1117,17 @@ strong {
             width: 255px;
             height: 60px;
         }
+    }
+}
+
+.confirm {
+    &__title {
+        font-family: $font-family-title;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.75px;
+        padding-top: 200px;
     }
 }
 

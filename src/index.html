@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="header">
     <div class="header__logo">
@@ -741,7 +742,8 @@
       </div>
     </div>
   </div>
-  <div class="modal modal-white fade" id="signModal" tabindex="-1" aria-labelledby="signModal" aria-hidden="true">
+  <div class="modal modal-white fade" data-next="confirm.html" id="signModal" tabindex="-1" aria-labelledby="signModal"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content modal-content--transparent">
         <div class="modal-header modal-header--white">
@@ -754,12 +756,13 @@
           </button>
         </div>
         <div class="modal-body">
-          <form class="signForm">
+          <form id="signForm" class="signForm">
             <div class="signForm__body">
-              <input class="signForm__input" type="text" name="name" required placeholder="Твое имя">
-              <input class="signForm__input" type="email" name="email" required placeholder="Электронная почта">
-              <input class="signForm__input" id="signFormPhone" type="tel" name="phone" required placeholder="Телефон">
-              <button class="signForm__btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+              <input class="signForm__input" id="signFormName" type="text" name="name" placeholder="Твое имя" required>
+              <input class="signForm__input" id="signFormEmail" type="email" name="email"
+                placeholder="Электронная почта" required>
+              <input class="signForm__input" id="signFormPhone" type="tel" name="phone" placeholder="Телефон" required>
+              <button class="signForm__btn" id="signFormBtn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
             </div>
             <div class="signForm__footer">
               <input class="signForm__checkbox" type="checkbox" id="confirm" name="confirm" required>
@@ -812,15 +815,14 @@
       </div>
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>

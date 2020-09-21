@@ -1544,7 +1544,8 @@ strong {
   .modal-content--transparent {
     background: none;
     background-color: transparent;
-    border: 2px solid white; }
+    border: 2px solid white;
+    height: 700px; }
   .modal-subtitle {
     font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
     font-size: 18px;
@@ -1577,7 +1578,8 @@ strong {
     letter-spacing: 0.75px; }
 
 .signForm {
-  padding: 0 100px; }
+  padding: 0 100px;
+  padding-top: 50px; }
   .signForm__body {
     display: -ms-flexbox;
     display: flex;
@@ -1715,6 +1717,14 @@ strong {
         background-color: black;
         border: 1px solid #84c727;
         color: #84c727; }
+
+.confirm__title {
+  font-family: "Plateia", Roboto, "Segoe UI";
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.75px;
+  padding-top: 200px; }
 
 @media (max-width: 1400px) {
   body {
