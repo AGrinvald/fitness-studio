@@ -27,17 +27,7 @@ function insertViewport() {
 
     if (w <= 1400 && isMobileDevice) {
         return $('meta[name=viewport]').attr('content', 'width=1400');
-    } else if (w <= 1400) {
-        var w = $( window ).width();
-
-        var wspec = 1920; 
-        var scale = w/wspec;
-        $( "#app" ).css('-webkit-transform',`scale(${scale})`);
-        $( "#app" ).css('-moz-transform',`scale(${scale})`);
-
-        return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
-
-    } else {
+    } else if (w > 1400) {
         return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
     }
 };
