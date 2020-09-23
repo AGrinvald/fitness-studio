@@ -729,9 +729,10 @@ strong {
 
 .title {
   font-family: "Plateia", Roboto, "Segoe UI";
-  font-size: 53px;
+  font-size: 48px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.3; }
   .title--white {
     color: white; }
 
@@ -754,7 +755,8 @@ strong {
     height: 170px;
     background-color: #84c727;
     z-index: 10;
-    bottom: -100px; }
+    bottom: -85px;
+    height: 130px; }
   .header::before {
     content: "";
     position: absolute;
@@ -799,7 +801,7 @@ strong {
       -ms-flex-direction: column;
           flex-direction: column;
       line-height: 1.1;
-      margin-bottom: 30px;
+      margin-bottom: 65px;
       text-shadow: 0px 0px 33px rgba(0, 0, 0, 0.69), 0px 0px 26px #000000; }
     .header__main-title-part {
       display: block; }
@@ -871,7 +873,7 @@ strong {
   background-color: #202020;
   position: relative;
   width: 100%;
-  padding-top: 145px; }
+  padding-top: 95px; }
   .offer::after {
     content: "";
     position: absolute;
@@ -882,7 +884,7 @@ strong {
     height: 170px;
     background-color: #84c727;
     z-index: 10;
-    bottom: -100px; }
+    bottom: -85px; }
   .offer__title {
     text-align: center;
     margin: 0;
@@ -989,7 +991,7 @@ strong {
     height: 170px;
     background-color: #84c727;
     z-index: 10;
-    bottom: -100px; }
+    bottom: -85px; }
   .coaches::before {
     content: "";
     position: absolute;
@@ -1114,7 +1116,7 @@ strong {
     height: 170px;
     background-color: #84c727;
     z-index: 10;
-    bottom: -100px; }
+    bottom: -85px; }
   .curriculum__container {
     width: 1170px;
     margin-left: auto;
@@ -1324,7 +1326,7 @@ strong {
     height: 170px;
     background-color: #84c727;
     z-index: 10;
-    bottom: -100px; }
+    bottom: -85px; }
   .supplement__container {
     width: 1170px;
     margin-left: auto;
@@ -1389,7 +1391,7 @@ strong {
 
 .main {
   width: 100%;
-  height: 1104px;
+  height: 800px;
   background-image: url(../images/main/background.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -1406,8 +1408,8 @@ strong {
         flex-direction: column;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    padding-bottom: 170px;
-    padding-top: 110px; }
+    padding-bottom: 120px;
+    padding-top: 80px; }
   .main__header {
     width: 1040px;
     margin-left: auto;
@@ -1445,8 +1447,9 @@ strong {
     font-size: 20px;
     letter-spacing: 0.75px;
     line-height: 1.5;
-    width: 555px;
-    height: 100px; }
+    width: 500px;
+    height: 100px;
+    color: white; }
     .main__btn:hover {
       background-color: black;
       border: 1px solid #84c727;
