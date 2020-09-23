@@ -710,6 +710,9 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
+html, body {
+  width: 100%; }
+
 body {
   background-color: white;
   font-family: "Avenir Next Cyr", Roboto, "Segoe UI";
@@ -734,7 +737,7 @@ strong {
 
 .header {
   position: relative;
-  height: 1002px;
+  height: 777px;
   background-image: url(../images/header/banner.png);
   background-size: cover;
   background-position-x: center;
@@ -748,17 +751,16 @@ strong {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: #84c727;
     z-index: 10;
-    bottom: -100px;
-    bottom: -200px; }
+    bottom: -100px; }
   .header::before {
     content: "";
     position: absolute;
     height: 843px;
     width: 100%;
-    bottom: -650px;
+    bottom: -580px;
     left: 0;
     background-image: url(../images/offer/transition.png);
     background-size: cover;
@@ -775,7 +777,7 @@ strong {
     -ms-flex-direction: column;
         flex-direction: column; }
   .header__logo {
-    width: 1400px;
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -786,18 +788,19 @@ strong {
       height: 91px; }
   .header__main {
     margin-top: auto;
-    margin-bottom: 150px; }
+    margin-bottom: 250px; }
     .header__main-title {
       margin: 0;
       color: white;
       font-family: "Plateia", Roboto, "Segoe UI";
-      font-size: 83px;
+      font-size: 64px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
           flex-direction: column;
       line-height: 1.1;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      text-shadow: 0px 0px 33px rgba(0, 0, 0, 0.69), 0px 0px 26px #000000; }
     .header__main-title-part {
       display: block; }
       .header__main-title-part--green {
@@ -813,14 +816,14 @@ strong {
       font-family: "Plateia", Roboto, "Segoe UI";
       color: white;
       text-transform: uppercase;
-      font-size: 25px;
-      margin-bottom: 85px;
+      font-size: 19px;
+      margin-bottom: 40px;
       text-shadow: 0px 0px 33px rgba(0, 0, 0, 0.69), 0px 0px 26px #000000; }
       .header__main-subtitle--primary {
         color: #84c727; }
     .header__main-action {
       position: relative;
-      margin-bottom: 85px;
+      margin-bottom: 75px;
       z-index: 3; }
     .header__main-btn {
       cursor: pointer;
@@ -840,8 +843,8 @@ strong {
       font-size: 20px;
       letter-spacing: 0.75px;
       line-height: 1.5;
-      width: 400px;
-      height: 80px;
+      width: 330px;
+      height: 70px;
       font-size: 20px;
       font-weight: 600;
       letter-spacing: -0.25px;
@@ -852,22 +855,23 @@ strong {
         border: 1px solid #84c727;
         color: #84c727; }
     .header__main-text {
+      font-size: 17px;
       position: absolute;
       top: 0;
-      right: -85px;
+      right: -30px;
       box-sizing: border-box;
       width: 430px;
       border-left: 1px solid #84c727;
       color: white;
       letter-spacing: 0.75px;
-      line-height: 1.5;
+      line-height: 1.45;
       padding-left: 20px; }
 
 .offer {
   background-color: #202020;
   position: relative;
   width: 100%;
-  padding-top: 230px; }
+  padding-top: 145px; }
   .offer::after {
     content: "";
     position: absolute;
@@ -875,7 +879,7 @@ strong {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: #84c727;
     z-index: 10;
     bottom: -100px; }
@@ -982,7 +986,7 @@ strong {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: #84c727;
     z-index: 10;
     bottom: -100px; }
@@ -1107,7 +1111,7 @@ strong {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: #84c727;
     z-index: 10;
     bottom: -100px; }
@@ -1317,7 +1321,7 @@ strong {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 2px;
-    height: 200px;
+    height: 170px;
     background-color: #84c727;
     z-index: 10;
     bottom: -100px; }
@@ -1728,4 +1732,4 @@ strong {
 
 @media (max-width: 1400px) {
   body {
-    width: 1400px; } }
+    min-width: 1200px; } }
