@@ -710,7 +710,8 @@ video {
   font: inherit;
   vertical-align: baseline; }
 
-html, body {
+html,
+body {
   width: 100%; }
 
 body {
@@ -789,6 +790,8 @@ strong {
       width: 189px;
       height: 91px; }
   .header__main {
+    position: relative;
+    overflow: hidden;
     margin-top: auto;
     margin-bottom: 250px; }
     .header__main-title {
@@ -857,17 +860,18 @@ strong {
         border: 1px solid #84c727;
         color: #84c727; }
     .header__main-text {
+      box-sizing: border-box;
       font-size: 17px;
       position: absolute;
       top: 0;
-      right: -30px;
-      box-sizing: border-box;
-      width: 430px;
+      right: -5px;
+      width: 405px;
       border-left: 1px solid #84c727;
       color: white;
       letter-spacing: 0.75px;
       line-height: 1.45;
-      padding-left: 20px; }
+      padding-left: 20px;
+      text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.89), 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .offer {
   background-color: #202020;
@@ -980,18 +984,8 @@ strong {
 .coaches {
   padding-top: 110px;
   padding-bottom: 100px;
-  position: relative; }
-  .coaches::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 2px;
-    height: 170px;
-    background-color: #84c727;
-    z-index: 10;
-    bottom: -85px; }
+  position: relative;
+  overflow: hidden; }
   .coaches::before {
     content: "";
     position: absolute;
@@ -1106,6 +1100,19 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%; }
+  .curriculum::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 2px;
+    height: 170px;
+    background-color: #84c727;
+    z-index: 10;
+    bottom: -85px;
+    top: -75px;
+    bottom: auto; }
   .curriculum::after {
     content: "";
     position: absolute;

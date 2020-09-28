@@ -103,7 +103,8 @@ video {
     vertical-align: baseline;
 }
 
-html, body {
+html,
+body {
     width: 100%;
 }
 
@@ -186,6 +187,8 @@ strong {
     }
 
     &__main {
+        position: relative;
+        overflow: hidden;
         margin-top: auto;
         margin-bottom: 250px;
 
@@ -246,17 +249,18 @@ strong {
         }
 
         &-text {
+            box-sizing: border-box;
             font-size: 17px;
             position: absolute;
             top: 0;
-            right: -30px;
-            box-sizing: border-box;
-            width: 430px;
+            right: -5px;
+            width: 405px;
             border-left: 1px solid $primary;
             color: white;
             letter-spacing: 0.75px;
             line-height: 1.45;
             padding-left: 20px;
+            text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.89), 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     }
 }
@@ -381,10 +385,7 @@ strong {
     padding-top: 110px;
     padding-bottom: 100px;
     position: relative;
-
-    &::after {
-        @include section-connector;
-    }
+    overflow: hidden;
 
     &::before {
         content: "";
@@ -519,6 +520,12 @@ strong {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+
+    &::before {
+        @include section-connector;
+        top: -75px;
+        bottom: auto;
+    }
 
     &::after {
         @include section-connector;
@@ -926,7 +933,7 @@ strong {
 
     &-content--shadow {
         position: relative;
-        
+
         &::before {
             content: "";
             position: absolute;
