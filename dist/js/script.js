@@ -14757,14 +14757,17 @@ $(function () {
   $("#curriculumAccordion").collapse();
   $("#signModal").on("show.bs.modal", function (e) {
     $("form#signForm").on("submit", function (e) {
-      console.log("submit");
-      var next = $("#signModal").data("next");
-      $.ajax({
-        url: next,
-        dataType: "html"
-      }).done(function (html) {
-        console.log(html);
-        $("#signModal .modal-content").html(html);
+      $.request("genericForm::onFormSubmit", {
+        complete: function complete() {
+          var next = $("#signModal").data("next");
+          $.ajax({
+            url: next,
+            dataType: "html"
+          }).done(function (html) {
+            console.log(html);
+            $("#signModal .modal-content").html(html);
+          });
+        }
       });
       return false;
     });
