@@ -14744,25 +14744,24 @@ function insertViewport() {
   var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
   if (w > 1400) {
-    return $('meta[name=viewport]').attr('content', 'user-scalable=yes, initial-scale=1, width=device-width');
+    return $("meta[name=viewport]").attr("content", "user-scalable=yes, initial-scale=1, width=device-width");
   }
 }
 
-;
 $(function () {
-  $('.coaches__slider').slick({
+  $(".coaches__slider").slick({
     infinite: true,
-    nextArrow: $('#nextCoach'),
-    prevArrow: $('#prevCoach')
+    nextArrow: $("#nextCoach"),
+    prevArrow: $("#prevCoach")
   });
-  $('#curriculumAccordion').collapse();
-  $('#signModal').on('show.bs.modal', function (e) {
+  $("#curriculumAccordion").collapse();
+  $("#signModal").on("show.bs.modal", function (e) {
     $("form#signForm").on("submit", function (e) {
       console.log("submit");
-      var next = $('#signModal').data("next");
+      var next = $("#signModal").data("next");
       $.ajax({
         url: next,
-        dataType: 'html'
+        dataType: "html"
       }).done(function (html) {
         console.log(html);
         $("#signModal .modal-content").html(html);
@@ -14771,13 +14770,26 @@ $(function () {
     });
     $("#signFormPhone").mask("+7(999) 999-99-99");
   });
+  $("#scroll-control").on("click", function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, "slow");
+    return false;
+  });
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop()) {
+      $("#scroll-control").fadeIn();
+    } else {
+      $("#scroll-control").fadeOut();
+    }
+  });
 });
 
 (function (factory) {
-  if (typeof define === 'function' && __webpack_require__(/*! !webpack amd options */ "./node_modules/webpack/buildin/amd-options.js")) {
+  if (typeof define === "function" && __webpack_require__(/*! !webpack amd options */ "./node_modules/webpack/buildin/amd-options.js")) {
     // AMD. Register as an anonymous module.
-    define(['jquery'], factory);
-  } else if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object') {
+    define(["jquery"], factory);
+  } else if ((typeof exports === "undefined" ? "undefined" : _typeof(exports)) === "object") {
     // Node/CommonJS
     factory(__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"));
   } else {
@@ -14793,13 +14805,13 @@ $(function () {
   $.mask = {
     //Predefined character definitions
     definitions: {
-      '9': "[0-9]",
-      'a': "[A-Za-z]",
-      '*': "[A-Za-z0-9]"
+      9: "[0-9]",
+      a: "[A-Za-z]",
+      "*": "[A-Za-z0-9]"
     },
     autoclear: true,
     dataName: "rawMaskFn",
-    placeholder: '_'
+    placeholder: "_"
   };
   $.fn.extend({
     //Helper Function for Caret positioning
@@ -14810,16 +14822,16 @@ $(function () {
         return;
       }
 
-      if (typeof begin == 'number') {
-        end = typeof end === 'number' ? end : begin;
+      if (typeof begin == "number") {
+        end = typeof end === "number" ? end : begin;
         return this.each(function () {
           if (this.setSelectionRange) {
             this.setSelectionRange(begin, end);
           } else if (this.createTextRange) {
             range = this.createTextRange();
             range.collapse(true);
-            range.moveEnd('character', end);
-            range.moveStart('character', begin);
+            range.moveEnd("character", end);
+            range.moveStart("character", begin);
             range.select();
           }
         });
@@ -14829,7 +14841,7 @@ $(function () {
           end = this[0].selectionEnd;
         } else if (document.selection && document.selection.createRange) {
           range = document.selection.createRange();
-          begin = 0 - range.duplicate().moveStart('character', -100000);
+          begin = 0 - range.duplicate().moveStart("character", -100000);
           end = begin + range.text.length;
         }
 
@@ -14863,7 +14875,7 @@ $(function () {
       firstNonMaskPos = null;
       _mask = String(_mask);
       $.each(_mask.split(""), function (i, c) {
-        if (c == '?') {
+        if (c == "?") {
           len--;
           partialPosition = i;
         } else if (defs[c]) {
@@ -14883,11 +14895,11 @@ $(function () {
       return this.trigger("unmask").each(function () {
         var input = $(this),
             buffer = $.map(_mask.split(""), function (c, i) {
-          if (c != '?') {
+          if (c != "?") {
             return defs[c] ? getPlaceholder(i) : c;
           }
         }),
-            defaultBuffer = buffer.join(''),
+            defaultBuffer = buffer.join(""),
             focusText = input.val();
 
         function tryFireCompleted() {
@@ -15113,7 +15125,7 @@ $(function () {
         }
 
         function writeBuffer() {
-          input.val(buffer.join(''));
+          input.val(buffer.join(""));
         }
 
         function checkVal(allow) {
@@ -15156,7 +15168,7 @@ $(function () {
           if (allow) {
             writeBuffer();
           } else if (lastMatch + 1 < partialPosition) {
-            if (settings.autoclear || buffer.join('') === defaultBuffer) {
+            if (settings.autoclear || buffer.join("") === defaultBuffer) {
               // Invalid value. Remove it and replace it with the
               // mask, which is the default behavior.
               if (input.val()) input.val("");
@@ -15177,7 +15189,7 @@ $(function () {
         input.data($.mask.dataName, function () {
           return $.map(buffer, function (c, i) {
             return tests[i] && c != getPlaceholder(i) ? c : null;
-          }).join('');
+          }).join("");
         });
         input.one("unmask", function () {
           input.off(".mask").removeData($.mask.dataName);
@@ -15216,7 +15228,7 @@ $(function () {
         });
 
         if (chrome && android) {
-          input.off('input.mask').on('input.mask', androidInputEvent);
+          input.off("input.mask").on("input.mask", androidInputEvent);
         }
 
         checkVal(); //Perform initial check for existing values

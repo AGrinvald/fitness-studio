@@ -737,6 +737,17 @@ strong {
   .title--white {
     color: white; }
 
+.widgets {
+  position: fixed;
+  z-index: 999;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 66px;
+  bottom: 35px;
+  right: 20px; }
+
 .header {
   position: relative;
   height: 777px;
