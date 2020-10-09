@@ -910,7 +910,6 @@ strong {
     z-index: 2; }
   .offer__main {
     box-sizing: border-box;
-    height: 1057px;
     background-image: url(../images/offer/background.png);
     background-size: cover;
     background-position-x: center;
@@ -918,6 +917,7 @@ strong {
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 160px;
+    padding-bottom: 160px;
     z-index: 0; }
   .offer__lists {
     width: 1170px;
