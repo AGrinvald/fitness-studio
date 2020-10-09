@@ -1009,7 +1009,8 @@ strong {
     background-image: url(../images/coaches/zitata.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 215px 174px; }
+    background-size: 215px 174px;
+    z-index: -1; }
   .coaches__title-wrap {
     width: 1170px;
     margin-left: auto;
