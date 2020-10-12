@@ -1066,6 +1066,7 @@ strong {
     outline: none; }
   .coaches__slide {
     position: relative;
+    min-height: 645px;
     outline: none;
     display: -ms-flexbox;
     display: flex;
